@@ -27,8 +27,4 @@ Link to live version: <!-- Insert Link Here -->
 
 ## KNOWN BUGS
 
-<<<<<<< HEAD
 ## ACKNOWLEDGEMENTS
-=======
-## ACKNOWLEDGEMENTS
->>>>>>> 4bdba20b9348fbce3049b885a83562f64914bc4f
