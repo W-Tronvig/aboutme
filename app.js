@@ -1,5 +1,8 @@
 'use strict';
 userInfo1();
+userInfo2();
+userInfo3();
+userInfo4();
 
 // getting to know you
 
@@ -9,17 +12,23 @@ function userInfo1() {
     console.log('Your name is ' + name);
 }
 
-const age = prompt('How old are you?');
-window.alert ('Holy Moly! It appears you were born yesterday, since you are only ' + age);
-console.log('You are ' + age + ' years old');
+function userInfo2() {
+    const age = prompt('How old are you?');
+    window.alert ('Holy Moly! It appears you were born yesterday, since you are only ' + age);
+    console.log('You are ' + age + ' years old');
+}
 
-const food = prompt('What is your favorite food to eat?');
-window.alert ('Aha! It seems that your favorite thing to eat is ' + food);
-console.log('Your favorite food is ' + food);
+function userInfo3() {
+    const food = prompt('What is your favorite food to eat?');
+    window.alert ('Aha! It seems that your favorite thing to eat is ' + food);
+    console.log('Your favorite food is ' + food);
+}
 
-const animal = prompt('And last but not least, what is your favorite animal?');
-window.alert ('That is so interesting, that your favorite animal is ' + animal);
-console.log('Your favorite animal is ' + animal);
+function userInfo4() {
+    const animal = prompt('And last but not least, what is your favorite animal?');
+    window.alert ('That is so interesting, that your favorite animal is ' + animal);
+    console.log('Your favorite animal is ' + animal);
+}
 
 // ice cream game - need to figure out how to make responses other than y and n say something other than the no response.
 
