@@ -18,7 +18,7 @@ const animal = prompt('And last but not least, what is your favorite animal?');
 window.alert ('That is so interesting, that your favorite animal is ' + animal);
 console.log('Your favorite animal is ' + animal);
 
-// ice cream game
+// ice cream game - need to figure out how to make responses other than y and n say something other than the no response.
 
 alert ('Now let\'s play a game!!!!');
 
@@ -83,11 +83,20 @@ for (let i = 0; i < 31; i ++) {
         alert('Almost!!!');
     } else if (guess === 31) {
         alert('Good job!');
-        yourFlavors.push(); // needed?
+        yourFlavors.push(); // need to figure out how to store user y and n's into const yourFlavors, so it can print what icecream they should order in the end.
         break;
     }
 }
 alert('You should order these flavors when you come into the shop ' + yourFlavors); // need to fix
 
 // new while loop program
+
+const myNumber = 27;
+const userNumber = prompt('Guess a number');
+
+while (userNumber != myNumber) {
+    userNumber = prompt('Keep guessing the number'); //need to add array
+
+}
+
 
