@@ -1,10 +1,13 @@
 'use strict';
+userInfo1();
 
 // getting to know you
 
-const name = prompt('Hello there, and what might your name be?');
-window.alert ('After what you wrote in this amazing prompt, it appears your name is ' + name);
-console.log('Your name is ' + name);
+function userInfo1() {
+    const name = prompt('Hello there, and what might your name be?');
+    window.alert ('After what you wrote in this amazing prompt, it appears your name is ' + name);
+    console.log('Your name is ' + name);
+}
 
 const age = prompt('How old are you?');
 window.alert ('Holy Moly! It appears you were born yesterday, since you are only ' + age);
@@ -18,7 +21,7 @@ const animal = prompt('And last but not least, what is your favorite animal?');
 window.alert ('That is so interesting, that your favorite animal is ' + animal);
 console.log('Your favorite animal is ' + animal);
 
-ice cream game - need to figure out how to make responses other than y and n say something other than the no response.
+// ice cream game - need to figure out how to make responses other than y and n say something other than the no response.
 
 alert ('Now let\'s play a game!!!!');
 
