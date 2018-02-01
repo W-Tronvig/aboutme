@@ -1,19 +1,37 @@
 body {
-    background: linear-gradient(red, rgb(133, 81, 23), rgb(19, 3, 75));
-    font-family: monospace;
-    text-align: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    margin: 0;
-    background-attachment: fixed; /*wanted to use a gradient background so I looked up
-    the formula for this css on stackoverflow.com*/
-}
+background: linear-gradient(red, rgb(133, 81, 23), rgb(19, 3, 75));
+font-family: monospace;
+text-align: center;
+background-repeat: no-repeat;
+height: 100%;
+margin: 0;
+background-attachment: fixed; /*wanted to use a gradient background so I looked up
+the formula for this css on stackoverflow.com*/
+ } 
 
-section h1 {
-    color: rgb(116, 8, 8);
-    font-size: 40px;
+/* section h1 {
+color: rgb(116, 8, 8);
+font-size: 40px;
 }
 
 section h2 {
-    color: rgb(173, 173, 42);
+color: rgb(173, 173, 42);
 }
+
+header ul {
+list-style: none;
+display: inline;
+font-size: 30px;
+margin: auto;
+}
+nav {
+    display: inline;
+
+}  */
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin: center;
+}
+
