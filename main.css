@@ -1,6 +1,7 @@
 body {
-background: linear-gradient(red, rgb(133, 81, 23), rgb(19, 3, 75));
+background: linear-gradient(rgb(23, 15, 142), rgb(2, 31, 11));
 font-family: monospace;
+color: white;
 
 background-repeat: no-repeat;
 

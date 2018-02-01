@@ -81,9 +81,12 @@ for (let i = 0; i < 31; i ++) {
         alert('Keep going, hint think about a famous icecream chain');
     } else if (guess < 20) {
         alert('Almost!!!');
+    } else if (guess < 31) {
+        alert('Just about there!!!');
     } else if (guess === 31) {
         alert('Good job!');
-        yourFlavors.push(); // need to figure out how to store user y and n's into const yourFlavors, so it can print what icecream they should order in the end.
+        yourFlavors.push(); // need to figure out how to store user y and n's
+        // into const yourFlavors, so it can print what icecream they should order in the end.
         break;
     }
 }
@@ -93,9 +96,10 @@ alert('You should order these flavors when you come into the shop ' + yourFlavor
 
 const myNumber = 27;
 const userNumber = prompt('Guess a number');
+console.log('To exit the loop type in 27'); // added exit number
 
 while (userNumber != myNumber) {
-    userNumber = prompt('Keep guessing the number'); //need to add array
+    userNumber = prompt('Keep guessing the number'); //receives error, need to fix.
 
 }
 
