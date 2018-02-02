@@ -1,8 +1,15 @@
 'use strict';
+const yourFlavors = [];
+
 userInfo1();
 userInfo2();
 userInfo3();
 userInfo4();
+chocolate();
+vanilla();
+pistacio();
+strawberry();
+coffee();
 
 // getting to know you
 
@@ -34,57 +41,61 @@ function userInfo4() {
 
 alert ('Now let\'s play a game!!!!');
 
-const yourFlavors = [];
-const likesChocolate = prompt('Do you like chocolate icecream?');
+function chocolate() {
+    const likesChocolate = prompt('Do you like chocolate icecream?');
 
-if (likesChocolate.toLowerCase() === 'yes' || likesChocolate.toLowerCase() === 'y') {
-    alert('That\'s so funny, chocolate is actually good for you! In moderation that is..');
-    console.log('User likes chocolate icecream');
-    yourFlavors.push('Chocolate');
-}   else {(likesChocolate.toLowerCase() === 'no' || likesChocolate.toLowerCase() === 'n');
-    alert('What?!?! Why not?? Chocolate is good for you dude/dudette!');
-    console.log('User does not like chocolate icecream');}
+    if (likesChocolate.toLowerCase() === 'yes' || likesChocolate.toLowerCase() === 'y') {
+        alert('That\'s so funny, chocolate is actually good for you! In moderation that is..');
+        console.log('User likes chocolate icecream');
+        yourFlavors.push('Chocolate');
+    }   else {(likesChocolate.toLowerCase() === 'no' || likesChocolate.toLowerCase() === 'n');
+        alert('What?!?! Why not?? Chocolate is good for you dude/dudette!');
+        console.log('User does not like chocolate icecream');}
+}
+function vanilla() {
+    const likesVanilla = prompt('Do you like Vanilla icecream??');
 
-const likesVanilla = prompt('Do you like Vanilla icecream??');
+    if (likesVanilla.toLowerCase() === 'yes' || likesVanilla.toLowerCase() === 'y') {
+        alert('Yay!!! For Vanilla icecream!');
+        console.log('User likes vanilla icecream');
+        yourFlavors.push('Vanilla');
+    }   else {(likesVanilla.toLowerCase() === likesVanilla.toLowerCase() === 'no' || 'n');
+        alert('Pffff!!!!! Whatever!');
+        console.log('User does not like vanilla icecream');}
+}
+function pistacio() {
+    const likesPistacio = prompt('Do you like Pistacio icecream?');
 
-if (likesVanilla.toLowerCase() === 'yes' || likesVanilla.toLowerCase() === 'y') {
-    alert('Yay!!! For Vanilla icecream!');
-    console.log('User likes vanilla icecream');
-    yourFlavors.push('Vanilla');
-}   else {(likesVanilla.toLowerCase() === likesVanilla.toLowerCase() === 'no' || 'n');
-    alert('Pffff!!!!! Whatever!');
-    console.log('User does not like vanilla icecream');}
+    if (likesPistacio.toLowerCase() === 'yes' || likesPistacio.toLowerCase() === 'y') {
+        alert('Heck yes! Pistacio iceream rocks!');
+        console.log('User likes pistacio icecream');
+        yourFlavors.push('Pistacio');
+    }   else {(likesPistacio.toLowerCase() === 'no' || likesPistacio.toLowerCase() === 'n');
+        alert('Pistacio icecream is the best though!?!');
+        console.log('User does not like pistacio icecream');}
+}
+function strawberry() {
+    const likesStrawberry = prompt ('Do you like Strawberry icecream?');
 
-const likesPistacio = prompt('Do you like Pistacio icecream?');
+    if (likesStrawberry.toLowerCase() === 'yes' || likesStrawberry.toLowerCase() === 'y') {
+        alert('Strawberry fields forever!!!');
+        console.log('User likes strawberry icecream');
+        yourFlavors.push('Strawberry');
+    }   else {(likesStrawberry.toLowerCase() === 'no' || likesStrawberry.toLowerCase() === 'n');
+        alert('Well, they are high in vitamin C, so maybe you should START LIKING THEM!');
+        console.log('User does not like strawberry icecream');}
+}
+function coffee() {
+    const likesCoffee = prompt('Do you like Coffee icecream?');
 
-if (likesPistacio.toLowerCase() === 'yes' || likesPistacio.toLowerCase() === 'y') {
-    alert('Heck yes! Pistacio iceream rocks!');
-    console.log('User likes pistacio icecream');
-    yourFlavors.push('Pistacio');
-}   else {(likesPistacio.toLowerCase() === 'no' || likesPistacio.toLowerCase() === 'n');
-    alert('Pistacio icecream is the best though!?!');
-    console.log('User does not like pistacio icecream');}
-
-const likesStrawberry = prompt ('Do you like Strawberry icecream?');
-
-if (likesStrawberry.toLowerCase() === 'yes' || likesStrawberry.toLowerCase() === 'y') {
-    alert('Strawberry fields forever!!!');
-    console.log('User likes strawberry icecream');
-    yourFlavors.push('Strawberry');
-}   else {(likesStrawberry.toLowerCase() === 'no' || likesStrawberry.toLowerCase() === 'n');
-    alert('Well, they are high in vitamin C, so maybe you should START LIKING THEM!');
-    console.log('User does not like strawberry icecream');}
-
-const likesCoffee = prompt('Do you like Coffee icecream?');
-
-if (likesCoffee.toLowerCase() === 'yes' || likesCoffee.toLowerCase() === 'y') {
-    alert('What\'s better than drinking coffee??? Eating it!');
-    console.log('User likes coffee icecream');
-    yourFlavors.push('Coffee');
-}   else {(likesCoffee.toLowerCase() === 'no' || likesCoffee.toLowerCase() === 'n');
-    alert('Dude/Dudette...really? Just really?');
-    console.log('User does not like coffee icecream');}
-
+    if (likesCoffee.toLowerCase() === 'yes' || likesCoffee.toLowerCase() === 'y') {
+        alert('What\'s better than drinking coffee??? Eating it!');
+        console.log('User likes coffee icecream');
+        yourFlavors.push('Coffee');
+    }   else {(likesCoffee.toLowerCase() === 'no' || likesCoffee.toLowerCase() === 'n');
+        alert('Dude/Dudette...really? Just really?');
+        console.log('User does not like coffee icecream');}
+}
 // for loop program
 
 let guess;
