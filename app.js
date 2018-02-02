@@ -11,6 +11,7 @@ pistacio();
 strawberry();
 coffee();
 baskinRobbins();
+magicNumber();
 
 // getting to know you
 
@@ -40,9 +41,8 @@ function userInfo4() {
 
 // ice cream game - need to figure out how to make responses other than y and n say something other than the no response.
 
-alert ('Now let\'s play a game!!!!');
-
 function chocolate() {
+    alert ('Now let\'s play a game!!!!');
     const likesChocolate = prompt('Do you like chocolate icecream?');
 
     if (likesChocolate.toLowerCase() === 'yes' || likesChocolate.toLowerCase() === 'y') {
@@ -122,18 +122,23 @@ function baskinRobbins() {
 
     if (guess === 31) {
         alert('Good job!');
+    } else {
+        alert('Sorry, you\'re out of guesses. We have 31 flavors!');
     }
-    alert('You should order these flavors when you come into the shop: ' + yourFlavors.join(', ') + '!');
+
+    if (yourFlavors.length !== 0) {
+        alert('You should order these flavors when you come into the shop: ' + yourFlavors.join(', ') + '!');
+    }
 }
 // new while loop program
 
-const myNumber = 27;
-let userNumber = prompt('Guess a number');
-console.log('To exit the loop type in 27'); // added exit number
+function magicNumber() {
+    const myNumber = 27;
+    let userNumber = prompt('Guess a number');
+    console.log('To exit the loop type in 27'); // added exit number
 
-while (userNumber != myNumber) {
-    userNumber = prompt('Keep guessing the number');
-
+    while (userNumber != myNumber) {
+        userNumber = prompt('Keep guessing the number');
+    }
 }
-
 
