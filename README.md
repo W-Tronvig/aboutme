@@ -37,3 +37,6 @@ TBD
  
 ## ACKNOWLEDGEMENTS
 
+Functions added as our first pair programming assignment.
+Navigator: William Tronvig
+Driver: Keli Hansen
