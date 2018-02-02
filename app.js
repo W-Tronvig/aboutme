@@ -10,6 +10,7 @@ vanilla();
 pistacio();
 strawberry();
 coffee();
+baskinRobbins();
 
 // getting to know you
 
@@ -97,33 +98,33 @@ function coffee() {
         console.log('User does not like coffee icecream');}
 }
 // for loop program
+function baskinRobbins() {
+    let guess;
 
-let guess;
-
-for (let i = 0; i < 31; i++) {
-    guess = parseInt(prompt('Do you know how many flavors of icecream we have?'));
-    if (guess === 0) {
-        alert('We definitely have more than that!');
-    } else if (guess > 0 && guess <= 10) {
-        alert('Keep trying! We have more than ten!');
-    } else if (guess > 10 && guess <= 15) {
-        alert('Keep going, hint think about a famous icecream chain');
-    } else if (guess > 15 && guess <= 20) {
-        alert('Almost!!!');
-    } else if (guess > 20 && guess < 31) {
-        alert('Just about there!!!');
-    } else if (guess > 31) {
-        alert('Too much!');
-    } else if (guess === 31) {
-        break;
+    for (let i = 0; i < 31; i++) {
+        guess = parseInt(prompt('Do you know how many flavors of icecream we have?'));
+        if (guess === 0) {
+            alert('We definitely have more than that!');
+        } else if (guess > 0 && guess <= 10) {
+            alert('Keep trying! We have more than ten!');
+        } else if (guess > 10 && guess <= 15) {
+            alert('Keep going, hint think about a famous icecream chain');
+        } else if (guess > 15 && guess <= 20) {
+            alert('Almost!!!');
+        } else if (guess > 20 && guess < 31) {
+            alert('Just about there!!!');
+        } else if (guess > 31) {
+            alert('Too much!');
+        } else if (guess === 31) {
+            break;
+        }
     }
-}
 
-if (guess === 31) {
-    alert('Good job!');
+    if (guess === 31) {
+        alert('Good job!');
+    }
+    alert('You should order these flavors when you come into the shop: ' + yourFlavors.join(', ') + '!');
 }
-alert('You should order these flavors when you come into the shop: ' + yourFlavors.join(', ') + '!'); // need to fix
-
 // new while loop program
 
 const myNumber = 27;
@@ -131,7 +132,7 @@ let userNumber = prompt('Guess a number');
 console.log('To exit the loop type in 27'); // added exit number
 
 while (userNumber != myNumber) {
-    userNumber = prompt('Keep guessing the number'); //receives error, need to fix.
+    userNumber = prompt('Keep guessing the number');
 
 }
 
