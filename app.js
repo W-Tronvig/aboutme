@@ -13,33 +13,33 @@ coffee();
 baskinRobbins();
 magicNumber();
 
-// getting to know you
+// Getting to know user
 
 function userInfo1() {
-    const name = prompt('Hello there, and what might your name be?');
-    window.alert ('After what you wrote in this amazing prompt, it appears your name is ' + name);
-    console.log('Your name is ' + name);
+    const name = prompt('Hello, I\'m William, what is your name?');
+    window.alert ('After what you wrote in this amazing prompt, it appears your name is ' + name + '.');
+    console.log('Your name is ' + name + '.');
 }
 
 function userInfo2() {
     const age = prompt('How old are you?');
-    window.alert ('Holy Moly! It appears you were born yesterday, since you are only ' + age);
-    console.log('You are ' + age + ' years old');
+    window.alert ('Holy Moly! It appears you were born yesterday, since you are only ' + age + '!');
+    console.log('You are ' + age + ' years old.');
 }
 
 function userInfo3() {
     const food = prompt('What is your favorite food to eat?');
-    window.alert ('Aha! It seems that your favorite thing to eat is ' + food);
-    console.log('Your favorite food is ' + food);
+    window.alert ('Aha! It seems that your favorite thing to eat is ' + food + '.');
+    console.log('Your favorite food is ' + food + '.');
 }
 
 function userInfo4() {
     const animal = prompt('And last but not least, what is your favorite animal?');
-    window.alert ('That is so interesting, that your favorite animal is ' + animal);
-    console.log('Your favorite animal is ' + animal);
+    window.alert ('That is so interesting, that your favorite animal is ' + animal + '.');
+    console.log('Your favorite animal is ' + animal + '.');
 }
 
-// ice cream game - need to figure out how to make responses other than y and n say something other than the no response.
+// Icecream game
 
 function chocolate() {
     alert ('Now let\'s play a game!!!!');
@@ -49,9 +49,12 @@ function chocolate() {
         alert('That\'s so funny, chocolate is actually good for you! In moderation that is..');
         console.log('User likes chocolate icecream');
         yourFlavors.push('Chocolate');
-    }   else {(likesChocolate.toLowerCase() === 'no' || likesChocolate.toLowerCase() === 'n');
-        alert('What?!?! Why not?? Chocolate is good for you dude/dudette!');
-        console.log('User does not like chocolate icecream');}
+    }   else if (likesChocolate.toLowerCase() === 'no' || likesChocolate.toLowerCase() === 'n') {
+        alert('What?!?! Why not?? Chocolate is good for you!');
+        console.log('User does not like chocolate icecream');
+    }   else (likesChocolate.toLowerCase() != 'no', 'yes', 'y', 'n');
+    alert('Try typing in yes or no, instead of the silly things you were before..');
+    console.log('User did not type a valid response');
 }
 function vanilla() {
     const likesVanilla = prompt('Do you like Vanilla icecream??');
@@ -60,9 +63,12 @@ function vanilla() {
         alert('Yay!!! For Vanilla icecream!');
         console.log('User likes vanilla icecream');
         yourFlavors.push('Vanilla');
-    }   else {(likesVanilla.toLowerCase() === likesVanilla.toLowerCase() === 'no' || 'n');
+    }   else if (likesVanilla.toLowerCase() === 'no' || likesVanilla.toLowerCase() === 'n') {
         alert('Pffff!!!!! Whatever!');
-        console.log('User does not like vanilla icecream');}
+        console.log('User does not like vanilla icecream');
+    }   else (likesVanilla.toLowerCase() != 'no', 'yes', 'y', 'n');
+    alert('Try typing in yes or no, instead of the silly things you were before..');
+    console.log('User did not type a valid response');
 }
 function pistacio() {
     const likesPistacio = prompt('Do you like Pistacio icecream?');
@@ -94,10 +100,10 @@ function coffee() {
         console.log('User likes coffee icecream');
         yourFlavors.push('Coffee');
     }   else {(likesCoffee.toLowerCase() === 'no' || likesCoffee.toLowerCase() === 'n');
-        alert('Dude/Dudette...really? Just really?');
+        alert('Seriously?');
         console.log('User does not like coffee icecream');}
 }
-// for loop program
+// For loop game
 function baskinRobbins() {
     let guess;
 
@@ -130,15 +136,15 @@ function baskinRobbins() {
         alert('You should order these flavors when you come into the shop: ' + yourFlavors.join(', ') + '!');
     }
 }
-// new while loop program
+// While loop game
 
 function magicNumber() {
     const myNumber = 27;
-    let userNumber = prompt('Guess a number');
+    let userNumber = prompt('Try to guess the magic number!!!!');
     console.log('To exit the loop type in 27'); // added exit number
 
     while (userNumber != myNumber) {
-        userNumber = prompt('Keep guessing the number');
+        userNumber = prompt('Keep guessing the number, if you can\'t guess the number try opening up the console :)');
     }
 }
 

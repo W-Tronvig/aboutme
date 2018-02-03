@@ -1,15 +1,14 @@
-body {
+/* body {
 background: linear-gradient(rgb(23, 15, 142), rgb(2, 31, 11));
 font-family: monospace;
 color: white;
 
 background-repeat: no-repeat;
 
-background-attachment: fixed; /*wanted to use a gradient background so I looked up
-the formula for this css on stackoverflow.com*/
- } 
+background-attachment: fixed; 
+}  
 
-/* section h1 {
+section h1 {
 color: rgb(116, 8, 8);
 font-size: 40px;
 }
@@ -27,11 +26,11 @@ margin: auto;
 nav {
     display: inline;
 
-}  */
+}
 
 nav li {
     list-style: none;
     display: inline;
     margin: center;
 }
-
+ */
