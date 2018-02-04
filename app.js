@@ -37,24 +37,21 @@ function userInfo4() {
     const animal = prompt('And last but not least, what is your favorite animal?');
     window.alert ('That is so interesting, that your favorite animal is ' + animal + '.');
     console.log('Your favorite animal is ' + animal + '.');
+    alert ('Now let\'s play a game!!!!');
 }
 
 // Icecream game
 
 function chocolate() {
-    alert ('Now let\'s play a game!!!!');
-    const likesChocolate = prompt('Do you like chocolate icecream?');
+    const likeschocolate = prompt ('Do you like Chocolate icecream?');
 
-    if (likesChocolate.toLowerCase() === 'yes' || likesChocolate.toLowerCase() === 'y') {
-        alert('That\'s so funny, chocolate is actually good for you! In moderation that is..');
+    if (likeschocolate.toLowerCase() === 'yes' || likeschocolate.toLowerCase() === 'y') {
+        alert('That\'s so funny, chocolate is actually good for you! In moderation that..');
         console.log('User likes chocolate icecream');
         yourFlavors.push('Chocolate');
-    }   else if (likesChocolate.toLowerCase() === 'no' || likesChocolate.toLowerCase() === 'n') {
-        alert('What?!?! Why not?? Chocolate is good for you!');
-        console.log('User does not like chocolate icecream');
-    }   else (likesChocolate.toLowerCase() != 'no', 'yes', 'y', 'n');
-    alert('Try typing in yes or no, instead of the silly things you were before..');
-    console.log('User did not type a valid response');
+    }   else {(likeschocolate.toLowerCase() === 'no' || likeschocolate.toLowerCase() === 'n');
+        alert('What?!? Why not? Chocolate is good for you!');
+        console.log('User does not like chocolate icecream');}
 }
 function vanilla() {
     const likesVanilla = prompt('Do you like Vanilla icecream??');
@@ -63,12 +60,9 @@ function vanilla() {
         alert('Yay!!! For Vanilla icecream!');
         console.log('User likes vanilla icecream');
         yourFlavors.push('Vanilla');
-    }   else if (likesVanilla.toLowerCase() === 'no' || likesVanilla.toLowerCase() === 'n') {
+    }   else {(likesVanilla.toLowerCase() === 'no' || likesVanilla.toLowerCase() === 'n');
         alert('Pffff!!!!! Whatever!');
-        console.log('User does not like vanilla icecream');
-    }   else (likesVanilla.toLowerCase() != 'no', 'yes', 'y', 'n');
-    alert('Try typing in yes or no, instead of the silly things you were before..');
-    console.log('User did not type a valid response');
+        console.log('User does not like vanilla icecream');}
 }
 function pistacio() {
     const likesPistacio = prompt('Do you like Pistacio icecream?');
@@ -147,4 +141,3 @@ function magicNumber() {
         userNumber = prompt('Keep guessing the number, if you can\'t guess the number try opening up the console :)');
     }
 }
-
