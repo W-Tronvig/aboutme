@@ -49,10 +49,25 @@ function chocolate() {
         alert('That\'s so funny, chocolate is actually good for you! In moderation that..');
         console.log('User likes chocolate icecream');
         yourFlavors.push('Chocolate');
-    }   else {(likeschocolate.toLowerCase() === 'no' || likeschocolate.toLowerCase() === 'n');
+    }   else if (likeschocolate.toLowerCase() === 'no' || likeschocolate.toLowerCase() === 'n') {
         alert('What?!? Why not? Chocolate is good for you!');
-        console.log('User does not like chocolate icecream');}
+        console.log('User does not like chocolate icecream');
+    }   else (likeschocolate.toLowerCase() != 'no', 'n', 'yes', 'y'); {
+        alert ('Try typing Yes, Y, No, or n');
+        console.log('User entered incorrect answer for prompt');
+    }
 }
+// function chocolate() {
+//     const likeschocolate = prompt ('Do you like Chocolate icecream?');
+
+//     if (likeschocolate.toLowerCase() === 'yes' || likeschocolate.toLowerCase() === 'y') {
+//         alert('That\'s so funny, chocolate is actually good for you! In moderation that..');
+//         console.log('User likes chocolate icecream');
+//         yourFlavors.push('Chocolate');
+//     }   else {(likeschocolate.toLowerCase() === 'no' || likeschocolate.toLowerCase() === 'n');
+//         alert('What?!? Why not? Chocolate is good for you!');
+//         console.log('User does not like chocolate icecream');}
+// }
 function vanilla() {
     const likesVanilla = prompt('Do you like Vanilla icecream??');
 
@@ -60,9 +75,13 @@ function vanilla() {
         alert('Yay!!! For Vanilla icecream!');
         console.log('User likes vanilla icecream');
         yourFlavors.push('Vanilla');
-    }   else {(likesVanilla.toLowerCase() === 'no' || likesVanilla.toLowerCase() === 'n');
+    }   else if (likesVanilla.toLowerCase() === 'no' || likesVanilla.toLowerCase() === 'n') {
         alert('Pffff!!!!! Whatever!');
-        console.log('User does not like vanilla icecream');}
+        console.log('User does not like vanilla icecream');
+    }   else (likesVanilla.toLowerCase() != 'no', 'n', 'yes', 'y'); {
+        alert ('Try typing Yes, Y, No, or n');
+        console.log('User entered incorrect answer for prompt');
+    }
 }
 function pistacio() {
     const likesPistacio = prompt('Do you like Pistacio icecream?');
@@ -71,9 +90,13 @@ function pistacio() {
         alert('Heck yes! Pistacio iceream rocks!');
         console.log('User likes pistacio icecream');
         yourFlavors.push('Pistacio');
-    }   else {(likesPistacio.toLowerCase() === 'no' || likesPistacio.toLowerCase() === 'n');
+    }   else if (likesPistacio.toLowerCase() === 'no' || likesPistacio.toLowerCase() === 'n') {
         alert('Pistacio icecream is the best though!?!');
-        console.log('User does not like pistacio icecream');}
+        console.log('User does not like pistacio icecream');
+    }   else (likesPistacio.toLowerCase() != 'no', 'n', 'yes', 'y'); {
+        alert ('Try typing Yes, Y, No, or n');
+        console.log('User entered incorrect answer for prompt');
+    }
 }
 function strawberry() {
     const likesStrawberry = prompt ('Do you like Strawberry icecream?');
@@ -82,9 +105,13 @@ function strawberry() {
         alert('Strawberry fields forever!!!');
         console.log('User likes strawberry icecream');
         yourFlavors.push('Strawberry');
-    }   else {(likesStrawberry.toLowerCase() === 'no' || likesStrawberry.toLowerCase() === 'n');
+    }   else if (likesStrawberry.toLowerCase() === 'no' || likesStrawberry.toLowerCase() === 'n') {
         alert('Well, they are high in vitamin C, so maybe you should START LIKING THEM!');
-        console.log('User does not like strawberry icecream');}
+        console.log('User does not like strawberry icecream');
+    }   else (likesStrawberry.toLowerCase() != 'no', 'n', 'yes', 'y'); {
+        alert ('Try typing Yes, Y, No, or n');
+        console.log('User entered incorrect answer for prompt');
+    }
 }
 function coffee() {
     const likesCoffee = prompt('Do you like Coffee icecream?');
@@ -93,9 +120,13 @@ function coffee() {
         alert('What\'s better than drinking coffee??? Eating it!');
         console.log('User likes coffee icecream');
         yourFlavors.push('Coffee');
-    }   else {(likesCoffee.toLowerCase() === 'no' || likesCoffee.toLowerCase() === 'n');
+    }   else if (likesCoffee.toLowerCase() === 'no' || likesCoffee.toLowerCase() === 'n') {
         alert('Seriously?');
-        console.log('User does not like coffee icecream');}
+        console.log('User does not like coffee icecream');
+    }   else (likesCoffee.toLowerCase() != 'no', 'n', 'yes', 'y'); {
+        alert ('Try typing Yes, Y, No, or n');
+        console.log('User entered incorrect answer for prompt');
+    }
 }
 // For loop game
 function baskinRobbins() {
@@ -130,8 +161,7 @@ function baskinRobbins() {
         alert('You should order these flavors when you come into the shop: ' + yourFlavors.join(', ') + '!');
     }
 }
-// While loop game
-
+//While Loop Game
 function magicNumber() {
     const myNumber = 27;
     let userNumber = prompt('Try to guess the magic number!!!!');
@@ -141,3 +171,18 @@ function magicNumber() {
         userNumber = prompt('Keep guessing the number, if you can\'t guess the number try opening up the console :)');
     }
 }
+// function magicNumber() {
+//     const myNumber = '';
+//     const userNumber = 0;
+
+//     do {
+//         userNumber = userNumber + 1;
+//         myNumber = myNumber + 1;
+//     }   while (userNumber < 5);
+
+//     userNumber = prompt('Try to guess the magic number!!!!');
+//     console.log('To exit the loop type in 27'); // added exit number
+// }
+// while (userNumber != myNumber) {
+//     userNumber = prompt('Keep guessing the number, if you can\'t guess the number try opening up the console :)');
+
