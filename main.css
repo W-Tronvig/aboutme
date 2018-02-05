@@ -151,6 +151,9 @@ nav {
 ul li {
     display: inline;
     list-style: none;
+    font-size:  26px;
+    padding-right: 30px;
+    
 }
 .background {
     width: 480px;
@@ -186,4 +189,13 @@ ul li {
 } */
 #James2 {
     border: 20px solid black;
+}
+p {
+    font-size: 26px;
+}
+ol{
+    font-size: 26px;
+}
+h3 {
+    font-size: 26px;
 }
