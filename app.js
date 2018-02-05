@@ -52,7 +52,7 @@ function chocolate() {
     }   else if (likeschocolate.toLowerCase() === 'no' || likeschocolate.toLowerCase() === 'n') {
         alert('What?!? Why not? Chocolate is good for you!');
         console.log('User does not like chocolate icecream');
-    }   else (likeschocolate.toLowerCase() != 'no', 'n', 'yes', 'y'); {
+    }   else if (likeschocolate.toLowerCase() != 'no', 'n', 'yes', 'y'); {
         alert ('Try typing Yes, Y, No, or n');
         console.log('User entered incorrect answer for prompt');
     }
@@ -78,7 +78,7 @@ function vanilla() {
     }   else if (likesVanilla.toLowerCase() === 'no' || likesVanilla.toLowerCase() === 'n') {
         alert('Pffff!!!!! Whatever!');
         console.log('User does not like vanilla icecream');
-    }   else (likesVanilla.toLowerCase() != 'no', 'n', 'yes', 'y'); {
+    }   else if (likesVanilla.toLowerCase() != 'no', 'n', 'yes', 'y'); {
         alert ('Try typing Yes, Y, No, or n');
         console.log('User entered incorrect answer for prompt');
     }
@@ -93,7 +93,7 @@ function pistacio() {
     }   else if (likesPistacio.toLowerCase() === 'no' || likesPistacio.toLowerCase() === 'n') {
         alert('Pistacio icecream is the best though!?!');
         console.log('User does not like pistacio icecream');
-    }   else (likesPistacio.toLowerCase() != 'no', 'n', 'yes', 'y'); {
+    }   else if (likesPistacio.toLowerCase() != 'no', 'n', 'yes', 'y'); {
         alert ('Try typing Yes, Y, No, or n');
         console.log('User entered incorrect answer for prompt');
     }
@@ -108,7 +108,7 @@ function strawberry() {
     }   else if (likesStrawberry.toLowerCase() === 'no' || likesStrawberry.toLowerCase() === 'n') {
         alert('Well, they are high in vitamin C, so maybe you should START LIKING THEM!');
         console.log('User does not like strawberry icecream');
-    }   else (likesStrawberry.toLowerCase() != 'no', 'n', 'yes', 'y'); {
+    }   else if (likesStrawberry.toLowerCase() != 'no', 'n', 'yes', 'y'); {
         alert ('Try typing Yes, Y, No, or n');
         console.log('User entered incorrect answer for prompt');
     }
@@ -123,7 +123,7 @@ function coffee() {
     }   else if (likesCoffee.toLowerCase() === 'no' || likesCoffee.toLowerCase() === 'n') {
         alert('Seriously?');
         console.log('User does not like coffee icecream');
-    }   else (likesCoffee.toLowerCase() != 'no', 'n', 'yes', 'y'); {
+    }   else if (likesCoffee.toLowerCase() != 'no', 'n', 'yes', 'y'); {
         alert ('Try typing Yes, Y, No, or n');
         console.log('User entered incorrect answer for prompt');
     }
@@ -132,7 +132,7 @@ function coffee() {
 function baskinRobbins() {
     let guess;
 
-    for (let i = 0; i < 31; i++) {
+    for (let i = 0; i < 5; i++) {
         guess = parseInt(prompt('Do you know how many flavors of icecream we have?'));
         if (guess === 0) {
             alert('We definitely have more than that!');
