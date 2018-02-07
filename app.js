@@ -167,22 +167,3 @@ for (let i = 0; i < 5; i++) {
 
 }
 
-// Examples
-// const theWinner = 27;
-//     if (theWinner === magicNumbers)
-//         alert('You win!');
-//     else if (theWinner != magicNumbers)
-// //         alert('Keep trying!');
-
-// const example = [1,2,3,4];
-// const example2 =['a','b','c','d'];
-
-// let key = 8;
-
-// for (let i = 0; i < 4; i++) {
-//     if(key < 9){
-//         alert(example[i]);
-//     }else if( key > 9){
-//         alert(example2[i]);
-//     }
-// };
