@@ -11,7 +11,7 @@ pistacio();
 strawberry();
 coffee();
 baskinRobbins();
-// magicNumber();
+
 
 // Getting to know user
 
@@ -152,29 +152,38 @@ function baskinRobbins() {
     }
 }
 
-//While Loop Game
+//for loop
 
-// function magicNumber() {
-//     magicNumberArray = [12, 75, 30];
-//     let userNumber = prompt('Try to guess the magic number!!!!');
+const magicNumbers = [23, 27, 47, 96, 40, 199, 300, 200, 99, 12, 42];
+const guess = prompt('Can you guess the magic number?');
 
-//     while (userNumber != myNumber) {
-//         userNumber = prompt('Keep guessing the number, if you can\'t guess the number try opening up the console :)');
+for (let i = 0; i < 5; i++) {
+
+    if (guess.includes(magicNumbers))
+        alert('You win!');
+    else if (!guess.includes(magicNumbers))
+        prompt('Try again!');
+    else {
+        alert('You\'re all out of guesses, thanks for playing!');
+    }
+}
+
+// Examples
+// const theWinner = 27;
+//     if (theWinner === magicNumbers)
+//         alert('You win!');
+//     else if (theWinner != magicNumbers)
+// //         alert('Keep trying!');
+
+// const example = [1,2,3,4];
+// const example2 =['a','b','c','d'];
+
+// let key = 8;
+
+// for (let i = 0; i < 4; i++) {
+//     if(key < 9){
+//         alert(example[i]);
+//     }else if( key > 9){
+//         alert(example2[i]);
 //     }
-
-// }
-// function magicNumber() {
-//     const myNumber = '';
-//     const userNumber = 0;
-
-//     do {
-//         userNumber = userNumber + 1;
-//         myNumber = myNumber + 1;
-//     }   while (userNumber < 5);
-
-//     userNumber = prompt('Try to guess the magic number!!!!');
-//     console.log('To exit the loop type in 27'); // added exit number
-// }
-// while (userNumber != myNumber) {
-//     userNumber = prompt('Keep guessing the number, if you can\'t guess the number try opening up the console')
-// }
+// };
