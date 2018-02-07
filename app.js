@@ -155,17 +155,16 @@ function baskinRobbins() {
 //for loop
 
 const magicNumbers = [23, 27, 47, 96, 40, 199, 300, 200, 99, 12, 42];
-const guess = prompt('Can you guess the magic number?');
+const guess = parseInt(prompt('Can you guess the magic number?'));
 
 for (let i = 0; i < 5; i++) {
 
-    if (guess.includes(magicNumbers))
+    if (magicNumbers.includes(guess)) {
         alert('You win!');
-    else if (!guess.includes(magicNumbers))
-        prompt('Try again!');
-    else {
-        alert('You\'re all out of guesses, thanks for playing!');
-    }
+        break;
+    }   else (!magicNumbers.includes(guess));
+    prompt('Try again!');
+
 }
 
 // Examples
